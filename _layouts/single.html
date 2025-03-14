@@ -49,6 +49,24 @@ layout: default
           </aside>
         {% endif %}
         {{ content }}
+
+
+        {% if site.adsense.enabled %}
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+            style="display:block; text-align:center;"
+            data-ad-layout="in-article"
+            data-ad-format="fluid"
+            data-ad-client="{{ site.adsense.client_id }}"
+            data-ad-slot="{{ site.adsense.ad_slot }}"
+            data-ad-test="on"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      {% endif %}
+      
+
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

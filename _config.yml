@@ -105,17 +105,24 @@ social:
 
 # Analytics
 analytics:
-    provider: # false (default), "google", "google-universal", "google-gtag", "custom"
+    #provider: # false (default), "google", "google-universal", "google-gtag", "custom"
+    provider: "google-gtag"
     google:
-        tracking_id:
-        anonymize_ip: # true, false (default)
+        tracking_id: G-329027333
+        anonymize_ip: true
+        #anonymize_ip: # true, false (default)
+adsense:
+    enabled: true # 광고 활성화 여부
+    client_id: "ca-pub-6648296746875975" # 기존 AdSense ID 유지
+    ad_slot: "8315688154" # 기존 광고 슬롯 ID 유지
+    auto_ads: true # 자동 광고 활성화 여부
 
 # Site Author
 author:
-    name: "Your Name"
+    name: "와이케이"
     avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-    bio: "I am an **amazing** person."
-    location: "Somewhere"
+    bio: "책, 생각, 기술을 정리하는 개발 블로그입니다."
+    location: "Seoul/Korea"
     email:
     links:
         - label: "Email"
@@ -132,7 +139,7 @@ author:
           # url: "https://facebook.com/"
         - label: "GitHub"
           icon: "fab fa-fw fa-github"
-          # url: "https://github.com/"
+          url: "https://github.com/yookeun"
         - label: "Instagram"
           icon: "fab fa-fw fa-instagram"
           # url: "https://instagram.com/"
