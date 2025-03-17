@@ -121,7 +121,7 @@ adsense:
 author:
     name: "와이케이"
     avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-    bio: "책, 생각, 기술을 정리하는 개발 블로그입니다."
+    bio: "책, 생각, 기술을 정리하는 블로그입니다."
     location: "Seoul/Korea"
     email:
     links:
